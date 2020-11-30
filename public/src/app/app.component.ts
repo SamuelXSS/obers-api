@@ -42,4 +42,12 @@ export class AppComponent {
         });
     }
   }
+  public checkSystem(): void {
+    this.http
+      .get('http://localhost:9095/health')
+      .subscribe((Response) => {
+        this.li = Response;
+        this.lis = this.li;
+      });
+  }
 }

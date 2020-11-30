@@ -216,6 +216,15 @@
     /* WebKit, Blink, Edge */
     color: rgb(207, 207, 207);
   }
+  .btn-secondary{
+    color: black;
+    font-weight: 600;
+    border-color: red;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s;
+    outline: none;    
+  }
   button {
     padding: 10px;
     color: white;
@@ -432,10 +441,15 @@
 
   <!-- Resources -->
 
-
   <!-- Terminal -->
+  <button
+    (click)="checkSystem()"
+    class="btn btn-secondary btn-block btn-lg"
+  >
+    Checar sistema
+  </button>
   <div class="terminal">
-    <pre>{{lis | json}}</pre>
+    <pre>{{ lis | json }}</pre>
   </div>
 
   <!-- Footer -->
