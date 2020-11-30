@@ -4,6 +4,7 @@
 
 1 - Clone the repository
 `git clone https://github.com/SamuelXSS/obers-api`
+
 2 - Backend Docker Build
 ```sh
 $ cd app/src
