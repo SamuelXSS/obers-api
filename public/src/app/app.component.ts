@@ -28,14 +28,14 @@ export class AppComponent {
   public check(data: string): void {
     if (data.length <= 14) {
       this.http
-        .post('http://localhost:9095/validator/Cpf', { cpf: data })
+        .post('http://0.0.0.0:9095/validator/Cpf', { cpf: data })
         .subscribe((Response) => {
           this.li = Response;
           this.lis = this.li;
         });
     } else {
       this.http
-        .post('http://localhost:9095/validator/Cnpj', { cnpj: data })
+        .post('http://0.0.0.0:9095/validator/Cnpj', { cnpj: data })
         .subscribe((Response) => {
           this.li = Response;
           this.lis = this.li;
